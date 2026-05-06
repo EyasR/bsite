@@ -1,0 +1,56 @@
+:root {
+    /* He has to inspect the CSS variables to find this one */
+    --system-status: "Active";
+    --fragment-2-data: "Bounty";
+    --bg-color: #050505;
+}
+.decoy-box {
+    margin-top: 30px;
+    border-color: #004400;
+    background: #020b02;
+}
+.decoy-box pre {
+    color: #00cc00;
+    font-size: 14px;
+    overflow-x: auto;
+}
+body {
+    background-color: var(--bg-color);
+    color: #00ff41;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#terminal {
+    border: 1px solid #00ff41;
+    padding: 30px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+    position: relative;
+}
+
+/* Adds a cool CRT monitor scanline effect */
+.scanline {
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 255, 65, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: scan 4s infinite linear;
+}
+
+@keyframes scan {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
