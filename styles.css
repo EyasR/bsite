@@ -54,3 +54,59 @@ body {
         top: 100%;
     }
 }
+#auth-module {
+  margin-top: 40px;
+  border-top: 1px dashed #00ff41;
+  padding-top: 20px;
+}
+
+#passphrase-input {
+  background: #001100;
+  border: 1px solid #00ff41;
+  color: #00ff41;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  width: 60%;
+  font-size: 16px;
+}
+
+#passphrase-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ff41;
+}
+
+#unlock-btn {
+  background: #00ff41;
+  color: #000;
+  border: none;
+  padding: 11px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#unlock-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#success-message {
+  margin-top: 30px;
+  padding: 30px;
+  background: #00ff41;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.8; box-shadow: 0 0 10px #00ff41; }
+  to { opacity: 1; box-shadow: 0 0 30px #00ff41; }
+}
