@@ -1,22 +1,26 @@
+
 :root {
     /* He has to inspect the CSS variables to find this one */
     --system-status: "Active";
     --fragment-2-data: "Bounty";
     --bg-color: #050505;
 }
+
 .decoy-box {
     margin-top: 30px;
-    border-color: #004400;
-    background: #020b02;
+    border-color: #440022; /* Changed from dark green to dark pink */
+    background: #0b0206; /* Changed from dark green-black to pink-black */
 }
+
 .decoy-box pre {
-    color: #00cc00;
+    color: #cc0088; /* Changed to slightly darker pink */
     font-size: 14px;
     overflow-x: auto;
 }
+
 body {
     background-color: var(--bg-color);
-    color: #00ff41;
+    color: #ff00aa; /* Neon pink text */
     font-family: "Courier New", Courier, monospace;
     margin: 0;
     display: flex;
@@ -27,11 +31,11 @@ body {
 }
 
 #terminal {
-    border: 1px solid #00ff41;
+    border: 1px solid #ff00aa;
     padding: 30px;
     width: 80%;
     max-width: 700px;
-    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+    box-shadow: 0 0 15px rgba(255, 0, 170, 0.4); /* Pink glow */
     position: relative;
 }
 
@@ -39,7 +43,7 @@ body {
 .scanline {
     width: 100%;
     height: 10px;
-    background: rgba(0, 255, 65, 0.1);
+    background: rgba(255, 0, 170, 0.1); /* Pink scanline */
     position: absolute;
     top: 0;
     left: 0;
@@ -54,59 +58,60 @@ body {
         top: 100%;
     }
 }
+
 #auth-module {
-  margin-top: 40px;
-  border-top: 1px dashed #00ff41;
-  padding-top: 20px;
+    margin-top: 40px;
+    border-top: 1px dashed #ff00aa;
+    padding-top: 20px;
 }
 
 #passphrase-input {
-  background: #001100;
-  border: 1px solid #00ff41;
-  color: #00ff41;
-  padding: 10px;
-  font-family: 'Courier New', Courier, monospace;
-  width: 60%;
-  font-size: 16px;
+    background: #110008; /* Dark magenta-black background */
+    border: 1px solid #ff00aa;
+    color: #ff00aa;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    font-size: 16px;
 }
 
 #passphrase-input:focus {
-  outline: none;
-  box-shadow: 0 0 10px #00ff41;
+    outline: none;
+    box-shadow: 0 0 10px #ff00aa;
 }
 
 #unlock-btn {
-  background: #00ff41;
-  color: #000;
-  border: none;
-  padding: 11px 20px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 16px;
+    background: #ff00aa;
+    color: #000;
+    border: none;
+    padding: 11px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 #unlock-btn:hover {
-  background: #fff;
-  color: #000;
+    background: #fff;
+    color: #000;
 }
 
 .hidden {
-  display: none !important;
+    display: none !important;
 }
 
 #success-message {
-  margin-top: 30px;
-  padding: 30px;
-  background: #00ff41;
-  color: #000;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  animation: pulse 1.5s infinite alternate;
+    margin-top: 30px;
+    padding: 30px;
+    background: #ff00aa;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    animation: pulse 1.5s infinite alternate;
 }
 
 @keyframes pulse {
-  from { opacity: 0.8; box-shadow: 0 0 10px #00ff41; }
-  to { opacity: 1; box-shadow: 0 0 30px #00ff41; }
+    from { opacity: 0.8; box-shadow: 0 0 10px #ff00aa; }
+    to { opacity: 1; box-shadow: 0 0 30px #ff00aa; }
 }
